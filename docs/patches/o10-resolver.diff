@@ -1,0 +1,29 @@
+--- recon-123/smali-out/smali/o10.smali	2026-08-19 20:44:25.431741100 -0300
++++ rebuild-123/work/patched-smali/smali/o10.smali	2026-08-19 20:48:47.274073900 -0300
+@@ -4200,26 +4200,6 @@
+ 
+     .line 21
+     .line 22
+-    iget-object p2, v1, Lyx3;->b:Ljava/lang/String;
+-
+-    .line 23
+-    .line 24
+-    iget-object p1, p1, Llw;->d:Ljava/lang/String;
+-
+-    .line 25
+-    .line 26
+-    invoke-static {p2, p1}, Lfi1;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+-
+-    .line 27
+-    .line 28
+-    .line 29
+-    move-result p1
+-
+-    .line 30
+-    if-eqz p1, :cond_1
+-
+-    .line 31
+-    .line 32
+     iget-object p1, v1, Lyx3;->c:Ljava/util/Set;
+ 
+     .line 33

@@ -1,0 +1,4 @@
+# Artefatos locais de análise e recompilação
+.pit/
+work/
+*.idsig

@@ -1,0 +1,67 @@
+--- work/baseline/smali/dw0.smali	2026-08-20 01:53:54.324804500 -0300
++++ work/patched-smali/smali/dw0.smali	2026-08-20 02:04:40.740598000 -0300
+@@ -32,62 +32,11 @@
+ .end method
+ 
+ .method public static a(Lmn2;Lzt0;)Z
+-    .locals 1
++    .locals 0
+ 
+-    .line 1
+-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+-
+-    .line 2
+-    .line 3
+-    .line 4
+-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+-
+-    .line 5
+-    .line 6
+-    .line 7
+-    sget-object v0, Ldw0;->a:Ljava/util/Set;
+-
+-    .line 8
+-    .line 9
+-    invoke-interface {v0, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+-
+-    .line 10
+-    .line 11
+-    .line 12
+-    move-result p0
+-
+-    .line 13
+-    if-eqz p0, :cond_1
+-
+-    .line 14
+-    .line 15
+-    instance-of p0, p1, Lyt0;
+-
+-    .line 16
+-    .line 17
+-    if-nez p0, :cond_0
+-
+-    .line 18
+-    .line 19
+-    instance-of p0, p1, Lxt0;
+-
+-    .line 20
+-    .line 21
+-    if-eqz p0, :cond_1
+-
+-    .line 22
+-    .line 23
+-    :cond_0
++    # PATCH: force PremiumFeature gate always open
+     const/4 p0, 0x1
+ 
+-    .line 24
+-    return p0
+-
+-    .line 25
+-    :cond_1
+-    const/4 p0, 0x0
+-
+-    .line 26
+     return p0
+ .end method
+ 
